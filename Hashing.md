@@ -19,9 +19,9 @@ It stores the data in form of key-value pair.<br>
 It converts key to an index using hash function.<br>
 Taking the index we store key-value in array.<br>
 The primary operations supported by hashtable are : <br>
-	1) put(key, value) : Adds key-value pair against unique key.<br>
-	2) get(key) : Get value for the provided key.<br>
-	3) remove(key) : Removes the key-value pair fro hashtable.<br>
+1) put(key, value) : Adds key-value pair against unique key.<br>
+2) get(key) : Get value for the provided key.<br>
+3) remove(key) : Removes the key-value pair fro hashtable.<br>
 Average running time is O(1).<br>
 
 Java Collections Framework has HashMap class and HashSet class.<br>
@@ -35,9 +35,9 @@ The situation where a newly inserted key, maps to an already occupied slot in th
 
 How to handle Collisions? <br>
 There are mainly two methods to handle collision:<br>
-1) Separate Chaining : using HashNode. <br>
+1) Separate Chaining : using HashNode. (in the form of LinkedList) <br>
 ![Screenshot (282)](https://user-images.githubusercontent.com/35030513/184872614-da009785-f27b-4298-9c8d-961d5012ad07.png)<br>
-2) Open Addressing
+2) Open Addressing :
 
 Q6. What is HashNode?<br>
 A HashNode class in HashTable consist of three data members: <br>
