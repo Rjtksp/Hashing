@@ -44,6 +44,58 @@ A HashNode class in HashTable consist of three data members: <br>
 1) K key : It is a unique value which help in storing data.<br>
 2) V value : It is the data that is stored based on location computed by key.<br>
 3) HashNode next : It refers to the next HashNode in chain of hash nodes.<br>
-![Screenshot (278)](https://user-images.githubusercontent.com/35030513/184872756-cce793ea-73d1-4e68-bc0c-799e87750b8b.png)<br>
+![Screenshot (278)](https://user-images.githubusercontent.com/35030513/184872756-cce793ea-73d1-4e68-bc0c-799e87750b8b.png)<br><br>
 
 
+<b>BASIC IMPLEMENTATION OF HASHTABLE:</b>
+```js
+public class HashTable {
+    HashNode[] buckets;
+    int numOfBuckets;
+    int size;
+    
+    HashTable(){
+        this(10);
+    }
+    HashTable(int capacity){
+        this.numOfBuckets = capacity;
+        buckets = new HashNode[numOfBuckets];
+        this.size = 0;
+    }
+    
+    public class HashNode{
+        Integer key;
+        String value;
+        HashNode next;
+        
+        HashNode(Integer key, String value){
+            this.key = key;
+            this.value = value;
+        }
+    }
+    
+    public int size(){
+        return size;
+    }
+    
+    public boolean isEmpty(){
+        return size == 0;
+    }
+    
+    public void put(Integer key, String value){
+        
+    }
+    
+    public String get(Integer key){
+        return null;
+    }
+    
+    public String remove(Integer key){
+        return null;
+    }
+    
+    public static void main(String[] args){
+        
+    }
+}
+```
