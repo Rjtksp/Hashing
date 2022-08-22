@@ -8,6 +8,7 @@ HashMap<K, V> is a part of Java’s collection since Java 1.2. This class is fou
 HashMap<Character, Integer> map = new HashMap<>();
 
 ### Methods:
+```js
 map.containsKey();
 map.put(x,y);
 map.get(x);
@@ -17,6 +18,7 @@ map.keySet();
 map.values();
 map.size();
 map.remove();
+```
 
 ## ABCABA to A 3 B 2 C 1 ?
 ```js
